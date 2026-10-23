@@ -1,0 +1,29 @@
+
+{
+  "name": "ecommerce-qa-automation",
+  "version": "1.0.0",
+  "description": "E-commerce QA Automation using JavaScript and Playwright",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "javascript",
+    "qa-automation",
+    "ecommerce"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9"
+  }
+}

@@ -9,4 +9,5 @@ test('Valid user should login successfully', async ({ page }) => {
   await loginPage.login('standard_user', 'secret_sauce');
 
   await expect(page).toHaveURL(/inventory.html/);
+  await expect(page.getByText('Products', { exact: true })).toBeVisible();
 });

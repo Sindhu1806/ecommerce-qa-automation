@@ -22,7 +22,7 @@ export default defineConfig({
     video: 'retain-on-failure',
 
     launchOptions: {
-      slowMo: 300,
+      slowMo: 1000,
     },
   },
 
